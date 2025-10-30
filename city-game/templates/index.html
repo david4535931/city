@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Життя мешканця міста</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f5f5;
+            text-align: center;
+            padding: 30px;
+        }
+        .stats {
+            background: white;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #aaa;
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            background: #3498db;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Життя мешканця міста 🏙️</h1>
+    <div class="stats">
+        <p>💵 Гроші: {{ player.money }}</p>
+        <p>⚡ Енергія: {{ player.energy }}</p>
+        <p>😀 Настрій: {{ player.mood }}</p>
+        <p>🍔 Їжа: {{ player.food }}</p>
+        <p>📅 День: {{ player.day }}</p>
+    </div>
+
+    <div>
+        <a href="/action/work"><button>Піти на роботу</button></a>
+        <a href="/action/eat"><button>Поїсти</button></a>
+        <a href="/action/shop"><button>В магазин</button></a>
+        <a href="/action/rest"><button>Відпочити</button></a>
+        <a href="/action/sleep"><button>Спати</button></a>
+    </div>
+</body>
+</html>
